@@ -10,6 +10,5 @@ gem "heroku", "~> 2.28.7"
 gem 'rack-jekyll', '~> 0.4.1'
 gem "unicorn", "~> 4.3.1"
 gem "rdiscount", :git => "https://github.com/sunaku/rdiscount.git"
-gem "ZURB-foundation"
 gem "foreman"
 gem "gemoji"
