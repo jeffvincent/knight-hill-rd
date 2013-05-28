@@ -21,6 +21,13 @@ task :pre_jekyll do
   })
   puts "done."
 
+  print "  Rendering Haml static pages ... "
+  system(%{
+    cd _static_pages && 
+    for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html; done
+  })
+  puts "done."
+
   puts "All done."
 
 end
