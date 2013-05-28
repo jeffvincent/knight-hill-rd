@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/avenir-35.eot?#iefix");
+  src: url("/fonts/avenir/avenir-35.eot?#iefix") format("eot"), url("/fonts/avenir/avenir-35.woff") format("woff"), url("/fonts/avenir/avenir-35.ttf") format("truetype"), url("/fonts/avenir/avenir-35.svg#Avenir-35") format("svg");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/avenir-35-oblique.eot?#iefix");
+  src: url("/fonts/avenir/avenir-35-oblique.eot?#iefix") format("eot"), url("/fonts/avenir/avenir-35-oblique.woff") format("woff"), url("/fonts/avenir/avenir-35-oblique.ttf") format("truetype"), url("/fonts/avenir/avenir-35-oblique.svg#avenir-35-oblique") format("svg");
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/avenir-45.eot?#iefix");
+  src: url("/fonts/avenir/avenir-45.eot?#iefix") format("eot"), url("/fonts/avenir/avenir-45.woff") format("woff"), url("/fonts/avenir/avenir-45.ttf") format("truetype"), url("/fonts/avenir/avenir-45.svg#avenir-45") format("svg");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/avenir-65.eot?#iefix");
+  src: url("/fonts/avenir/avenir-65.eot?#iefix") format("eot"), url("/fonts/avenir/avenir-65.woff") format("woff"), url("/fonts/avenir/avenir-65.ttf") format("truetype"), url("/fonts/avenir/avenir-65.svg#avenir-65") format("svg");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/avenir-85.eot?#iefix");
+  src: url("/fonts/avenir/avenir-85.eot?#iefix") format("eot"), url("/fonts/avenir/avenir-85.woff") format("woff"), url("/fonts/avenir/avenir-85.ttf") format("truetype"), url("/fonts/avenir/avenir-85.svg#avenir-85") format("svg");
+  font-weight: 700;
+}
+
+/* line 12, ../_sass/screen.sass */
+.column {
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  zoom: 1;
+}
+
+/* line 20, ../_sass/screen.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 23, ../_sass/screen.sass */
+body, h1 {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+/* line 26, ../_sass/screen.sass */
+.section {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+/* line 31, ../_sass/screen.sass */
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 80%;
+}
+
+/* line 38, ../_sass/screen.sass */
+.main-title {
+  text-align: center;
+  font-size: 34px;
+}
+
+/* line 42, ../_sass/screen.sass */
+.video-embed {
+  width: 100%;
+}
+
+/* line 47, ../_sass/screen.sass */
+.column.main-page {
+  width: 45%;
+}
+
+/* line 50, ../_sass/screen.sass */
+.legal-information {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+/* line 54, ../_sass/screen.sass */
+.legal-information p {
+  font-style: italic;
+}

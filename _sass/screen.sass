@@ -1,2 +1,55 @@
-// Your custom styles belong here
-// enjoy! --jeff
+// imports //
+
+@import compass/css3/box-sizing
+@import fonts
+
+// vars //
+
+$fonts: "Avenir", Helvetica, Arial, sans-serif
+
+// placeholders //
+
+%col
+  display: inline-block
+  *display: inline
+  vertical-align: top
+  zoom: 1 
+
+// enough chit-chat //
+
+*
+  +box-sizing(border-box)
+
+body, h1
+  font-family: $fonts
+
+.section
+  width: 100%
+  padding: 20px
+  position: relative
+
+.content
+  max-width: 960px
+  margin: 0 auto
+  padding: 20px
+  position: relative
+  width: 80%
+
+.main-title
+  text-align: center
+  font-size: 34px
+
+.video-embed
+  width: 100%
+
+.column
+  @extend %col
+  &.main-page
+    width: 45%
+
+.legal-information
+  margin: 0 auto
+  text-align: center
+  width: 50%
+  p
+    font-style: italic
