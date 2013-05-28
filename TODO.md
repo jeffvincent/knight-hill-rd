@@ -11,4 +11,6 @@ X Spec out Index page!
 X Let's bring over some sample styles, why the hell not.
 X Add title YEAH BUDDY
 
-* OK, let's see what breaks!
+* Flickr Gallery Widget
+* Put in actual text
+* Create some real stylez
