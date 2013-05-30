@@ -1,11 +1,35 @@
 // imports //
 
 @import compass/css3/box-sizing
-@import fonts
+
+// fonts //
+
+@import url(http://fonts.googleapis.com/css?family=Lusitana:400,700|Alegreya+SC)
 
 // vars //
 
-$fonts: "Avenir", Helvetica, Arial, sans-serif
+$body-fonts: 'Lusitana', Helvetica, Arial, sans-serif
+$header-fonts: 'Alegreya SC', Helvetica, serif
+
+$green: #ACDE9A
+$blue: #67D1DD
+
+$large-screen: 1600px
+$medium-screen: 960px
+$small-screen: 650px
+
+// mixins //
+
+=breakpoint($point)
+  @if $point == large-screen
+    @media (max-width: $large-screen)
+      @content
+  @if $point == medium-screen
+    @media (max-width: $medium-screen)
+      @content
+  @if $point == small-screen
+    @media (max-width: $small-screen)
+      @content
 
 // placeholders //
 
@@ -15,41 +39,134 @@ $fonts: "Avenir", Helvetica, Arial, sans-serif
   vertical-align: top
   zoom: 1 
 
+%align-center
+  text-align: center
+
 // enough chit-chat //
 
 *
   +box-sizing(border-box)
 
+body
+  margin: 0
+
 body, h1
-  font-family: $fonts
+  font-family: $body-fonts
+
+h1, h2
+  font-family: $header-fonts
+h1
+  font-size: 38px
+h2
+  font-size: 30px
+
+i
+  padding: 0 4px
+
+img
+  max-width: 100%
+
+a
+  color: $blue
+  text-decoration: none
+  &:hover
+    text-decoration: underline
 
 .section
   width: 100%
   padding: 20px
   position: relative
+  background-color: $green
+  +breakpoint(small-screen)
+    padding: 20px 10px
 
 .content
+  background-color: white
   max-width: 960px
   margin: 0 auto
-  padding: 20px
+  padding: 40px
   position: relative
   width: 80%
+  +breakpoint(small-screen)
+    padding: 20px
+    width: 100%
 
 .main-title
-  text-align: center
-  font-size: 34px
+  @extend %align-center
+  border-bottom: 1px solid #333
+  h1, h2
+    margin-bottom: 5px
+  h2
+    margin-top: 0
+
+.listing-info
+  margin: 0 auto
+  padding: 20px 0 60px
+  width: 70%
+  p
+    margin-top: 0
+    font-size: 22px
+    @extend %align-center
+  .top-pitch
+    font-size: 18px
+  +breakpoint(small-screen)
+    width: 100%
+    p, .top-pitch
+      font-size: 16px
 
 .video-embed
   width: 100%
 
-.column
+.selling-points
+  padding: 60px 0
+  +breakpoint(small-screen)
+    padding-right: 20px
+
+.selling-point-column
   @extend %col
-  &.main-page
-    width: 45%
+  min-width: 300px
+  width: 45%
+  span
+    font-weight: 700
+    font-size: 20px
+  ul 
+    list-style: none
+    padding: 0
+    margin: 10px 0
+    li
+      font-size: 15px
+      padding-left: 1em
+      text-indent: -0.6em
+      line-height: 140%
+      margin-bottom: 5px
+      &:before
+        content: "• "
+        color: $green
+        margin-right: 5px
+  &.second
+    margin-left: 60px
+
+  +breakpoint(medium-screen)
+    width: 70%
+    &.second
+      margin-left: 0
+  +breakpoint(small-screen)
+    min-width: 100%
+    width: 100%
+    span, li
+      font-size: 14px
+
+.photo-matrix
+  margin: 20px 0 40px
 
 .legal-information
-  margin: 0 auto
+  padding: 40px 0 20px
+  border-top: 1px solid #333
   text-align: center
-  width: 50%
   p
+    margin: 0 auto
+    width: 50%
     font-style: italic
+  +breakpoint(small-screen)
+    p
+      width: 80%
