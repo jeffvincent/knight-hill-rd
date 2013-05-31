@@ -210,22 +210,29 @@ a:hover {
 /* line 159, ../_sass/screen.sass */
 .photo-matrix {
   margin: 20px 0 40px;
+  text-align: right;
+}
+/* line 163, ../_sass/screen.sass */
+.photo-matrix a {
+  color: #333333;
+  font-size: 14px;
+  padding-right: 5px;
 }
 
-/* line 162, ../_sass/screen.sass */
+/* line 168, ../_sass/screen.sass */
 .legal-information {
   padding: 40px 0 20px;
   border-top: 1px solid #333333;
   text-align: center;
 }
-/* line 166, ../_sass/screen.sass */
+/* line 172, ../_sass/screen.sass */
 .legal-information p {
   margin: 0 auto;
   width: 50%;
   font-style: italic;
 }
 @media (max-width: 650px) {
-  /* line 171, ../_sass/screen.sass */
+  /* line 177, ../_sass/screen.sass */
   .legal-information p {
     width: 80%;
   }
